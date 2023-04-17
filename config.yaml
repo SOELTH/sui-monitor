@@ -1,0 +1,19 @@
+slack_token: your-slack-token
+slack_channel: "#your-channel"
+sui_node_endpoints:
+  - url: http://testnet.fengsui.wtf:9184/metrics
+    name: FengSui
+metrics_to_fetch:
+  - last_executed_checkpoint
+  - highest_synced_checkpoint
+  - last_committed_round
+  - current_round
+  - highest_received_round
+  - certificates_created
+  - uptime
+metrics_to_monitor_for_increase:
+  - last_executed_checkpoint
+  - highest_synced_checkpoint
+previous_metrics_file: previous_metrics.yaml
+slack_users_to_tag:
+  - <@U040X5LJ8AF> # Replace with the actual user ID
