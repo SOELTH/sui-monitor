@@ -1,4 +1,4 @@
-# SUI Node Monitoring Script
+# SUI Node Slack Monitoring Script
 
 This script helps you monitor SUI nodes by periodically fetching relevant metrics and reporting them to a Slack channel. If any metric doesn't increase since the last run, or if a node is down, the script tags specified users in the Slack message.
 
